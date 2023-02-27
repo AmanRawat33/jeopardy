@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: #0F2027;
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+
+}
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading {
+    letter-spacing: .5px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#38477100, #001449);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container .color {
+    list-style: none;
+    background-color: #fff;
+    margin: 12px;
+    padding: 8px;
+    border-radius: 2px 10px 2px 10px;
+    text-align: center;
+    cursor: pointer; 
+    transition: transform .3s ease;
+}
+
+.container .color:active {
+    transform: scale(1.05);
+}
+
+.color .rect-box {
+    width: 185px;
+    height: 188px;
+    background-color: #ffabff;
+}
+
+.color:hover .rect-box {
+    filter: brightness(106%);
+}
+
+.color .hex-value {
+    text-transform: uppercase;
+    display: block;
+    color: #444;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 12px 0 5px 5px;
+}
+
+.refresh-palette {
+    outline:none;
+    cursor: pointer;
+    padding: 12px 20px;
+    color:#fff;
+    background: #0F2027;
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+
+}
